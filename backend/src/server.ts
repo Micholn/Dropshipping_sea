@@ -33,13 +33,16 @@ let jwtOptions = {
 let strategy = new jwtStrategy(jwtOptions, (jwtPaylo
 
 
-Passport.use( 
+Passport.use( express: comfig: ss:
 if (process.env.NODE_ENV !== "production")
 
 if (process.env.NODE_ENV !== production) {
   require("dotenv").config()
-}
 
+
+
+
+  
 const express = require("express");
 const app = express();
 const bcrypt = require("bcrypt");/*module for hashing our users password and comparing hashed
