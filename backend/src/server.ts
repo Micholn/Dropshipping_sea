@@ -41,6 +41,8 @@ if (process.env.NODE_ENV !== "production") {
   require("dotenv").config()
 }
 
+if (process)
+
 const express = require("express");
 const app = express();
 const bcrypt = require("bcrypt");/*module for hashing our users password and comparing hashed
