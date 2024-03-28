@@ -38,7 +38,7 @@ Passport.use( express: comfig: ss: any: : )
 /*load up our environmental variables for development, so we're requiring that development
 dependency */
 if (process.env.NODE_ENV !== "production") {
-  require("dotenv")
+  require("dotenv"
 
 if (process.env.NODE_ENV !== production) {
   require("dotenv").config()
