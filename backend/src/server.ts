@@ -33,7 +33,7 @@ let jwtOptions = {
 let strategy = new jwtStrategy(jwtOptions, (jwtPaylo
 
 
-Passport.use( express: comfig: s
+Passport.use( express: comfig:
 if (process.env.NODE_ENV !== "production")
 
 if (process.env.NODE_ENV !== production) {
