@@ -47,7 +47,12 @@
                 "operationId": "Addproduct",
                 "consumes": [
                     "multipart/form-data"
-                ]
+                ],
+                "produces": [
+                    "application/xml",
+                    "application/json"
+                ],
+                "parameters": 
             }
         },
         "/category": {
