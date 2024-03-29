@@ -1,0 +1,51 @@
+{
+    "swagger": "2.0",
+    "info": {
+
+    },
+    "host": "",
+    "tags": [
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+        
+        },
+    ], 
+    "schemes": [
+
+    ],
+    "paths": {
+        "/product": {
+
+        },
+        "/category": {
+
+        },
+        "/permisson": {
+
+        },
+        "/businessUser/signup": {
+
+        },
+        "/businessUser/login": {
+
+        },
+
+    },
+    "securityDefinitions": {
+
+    },
+    "definitions": {
+
+    }
+}
