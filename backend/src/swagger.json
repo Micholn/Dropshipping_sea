@@ -12,8 +12,8 @@
     "host": "localhost:8000",
     "tags": [
         {
-            "name": "",
-            "description": 
+            "name": "Authorization",
+            "description": "Authentication Apis"
         },
         {
             "name": "",
