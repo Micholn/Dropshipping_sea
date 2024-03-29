@@ -95,4 +95,6 @@ app.delete("/logout", (req, res) => {
 /**
  * starting the public server
  */
-public start = 
+public start = (port: number) => {
+  
+}
