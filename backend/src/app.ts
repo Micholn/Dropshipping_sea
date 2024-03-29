@@ -21,16 +21,7 @@ export default starter;
 
 
 
-
-/**initialize passport and pass it to our different functions */
-function initialize(passport, getUserByEmail, getUserById) {
-  /**the parameters we're authenticating are: email, password and the done function is going 
-   * to be called when we're done authenticating our user*/
-  const authenticateUser = async (email, password, done) => {
-      const user = getUserByEmail(email)
-      if (user == null) {
-        return done(null, false, { message: "No user with that email"});
-      }  
+ }  
 
 
 
