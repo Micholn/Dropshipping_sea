@@ -30,10 +30,11 @@
         {
             "name": "Admin",
             "description": "Admin Apis"
-        },
+        }
     ], 
     "schemes": [
-
+        "http",
+        "https"
     ],
     "paths": {
         "/product": {
