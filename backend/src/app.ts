@@ -35,19 +35,7 @@ function initialize(passport, getUserByEmail, getUserById) {
         return done(null, false, { message: "No user with that email"});
       }  
 
-/**here we're checking the password the user sent from the login form and comparing to the 
- * user.password, if it returns true then we have an authenticated user (comparing this user 
- * to the password that's passed in the password for authenticateUser) */
-      try { 
-        if (await bcrypt.compare(password, user.password)) {
-            return done(null, user);//this is the user they are logged in as 
-        } else {
-            return done(null, false, { message: "password incorrect"})
-        }
-      } catch (e) {
-        return done(e)
-      }
-  }
+
 
 
 
