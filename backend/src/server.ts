@@ -11,7 +11,8 @@ import productRouter from './Routers/productRouter';
 import profileRouter from '/Routers/profileRouter';
 import categoryRouter from './Routers/categoryRouter';
 import roleRouter from './Routers/roleRouter';
-import Middlewares from './'
+import Middlewares from './Middleware/authMiddleware';
+
 
 import allApis from './swagger.json';
 import * from swaggerUi from "swagger-ui-express";
