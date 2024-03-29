@@ -39,7 +39,10 @@
     "paths": {
         "/product": {
             "post": {
-                
+                "tags": [
+                    "product"
+                ],
+                "summary": "To add new product"
             }
         },
         "/category": {
