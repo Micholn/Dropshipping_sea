@@ -10,5 +10,3 @@ const starter = new server().start(port)
   });
 
 export default starter;
-
-
