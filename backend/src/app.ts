@@ -12,25 +12,3 @@ const starter = new server().start(port)
 export default starter;
 
 
-
-
-
-
-
-
-
-
-
- }  
-
-
-
-
-  passport.serializeUser((user, done) => (null, user.id))
-  passport.deserializeUser((id, done) => {  
-    return done(null, getUserById(id))
-   })
-
-}
-
-module.exports = initialize; //exporting the function so that it can be useable
