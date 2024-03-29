@@ -96,5 +96,7 @@ app.delete("/logout", (req, res) => {
  * starting the public server
  */
 public start = (port: number) => {
-  return new Promise(resolve, reject) =
+  return new Promise(resolve, reject) => {
+    const server
+  }
 }
