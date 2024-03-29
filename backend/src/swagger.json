@@ -28,8 +28,8 @@
             "description": "All about permission"
         },
         {
-            "name": "",
-            "description":
+            "name": "Admin",
+            "description": "Admin Apis"
         },
     ], 
     "schemes": [
