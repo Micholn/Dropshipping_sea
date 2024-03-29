@@ -98,6 +98,6 @@ app.delete("/logout", (req, res) => {
 public start = (port: number) => {
   return new Promise(resolve, reject) => {
     const server = http.createServer(this.app);
-    server.listen(port)
+    server.listen(port, () => )
   }
 }
