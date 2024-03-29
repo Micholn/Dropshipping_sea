@@ -25,7 +25,7 @@ let Extracjwt = passportJWT.extract;
 let jwtStrategy = passportJWT.strategy;
 
 let jwtOptions = {
-  jwtFromRequest: Extractalalljwt.strategy;
+  jwtFromRequest: ExtractJwt.strategy;
   
 
 //eslint-disable-next-line new-cap
@@ -46,15 +46,6 @@ const flash = require("express-flash");//to display messages and response
 const session = require("express-session"); //to persist users across different pages
 const methodOverride = require("method-override");
 
-
-/**function for finding our user based on the amail and passport that we're configuring */
-const initializePassport = require("./passport-config");
-//now pass the initialized passport to the different variable
-initializePassport(
-  passport,
-  email => users.find(user => user.email === email ),
-  id => users.find(user => user.id === id )
-)
 
 
 const users = [] //create a variable and storing our users in an empty array instead of a database 
@@ -94,48 +85,13 @@ app.get("/register", checkNotAuthenticated, (req, res) => {
   res.render("register.ejs");
 });
 
-//create a new user with the correct hashed password
-/*The password is going to be passed into req.body.password as well as how many times we want 
-the password to be hashed(10). here this variable stores the user , since the function is asynchronous, it's going to return after it awaits*/
-app.post("/register", checkNotAuthenticated, async (req, res) => { 
-  try {
-    const hashedPassword = await bcrypt.hash(req.body.password, 10);
-    users.push({
-      id: Date.now().toString(), //unique identifier, generated automatically if there were a database
-      name: req.body.name,   //corresponding to the express.urlencoded
-      email: req.body.email,
-      password: hashedPassword //password is going to be hashed
-    });
-
-    res.redirect("/login")//redirect the user here if the above is successful
-  } 
-  catch {
-    res.redirect("/register");//if there's a failure you're going to be redirected here
-  }
-
-  //console.log(users) //to see if we're adding users on the console
-});
-
 app.delete("/logout", (req, res) => {
   req.logOut()
   res.redirect("/login");
 })
 
-function checkAuthenticated(req, res, next) {
-  if (req.isAuthenticated()) {
-    return next()
-  }
-  res.redirect("/login")
-}
-
-function checkNotAuthenticated(req, res, next) {
-   if (req.isAuthenticated()) {
-    return res.redirect("/")
-   }
-   next()
-}
 
 
-app.listen(3000, function(req, res) {
-  console.log("server is running really fast")
-});
+/**
+ * starting the public server
+ */
