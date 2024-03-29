@@ -100,6 +100,6 @@ public start = (port: number) => {
     const server = http.createServer(this.app);
     server.listen(port, () => {
       resolve(port);
-    }).on("")
+    }).on("error", )
   }
 }
