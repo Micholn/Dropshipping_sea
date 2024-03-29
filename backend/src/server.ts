@@ -12,10 +12,8 @@ import profileRouter from '/Routers/profileRouter';
 import categoryRouter from './Routers/categoryRouter';
 import roleRouter from './Routers/roleRouter';
 import Middlewares from './Middleware/authMiddleware';
-
-
 import allApis from './swagger.json';
-import * from swaggerUi from "swagger-ui-express";
+import * as swaggerUi from "swagger-ui-express";
 import permissionRouter from './Routers/permissionRouter'
 import adminRouter from './Routers/adminRouter';
 
@@ -23,7 +21,7 @@ import adminRouter from './Routers/adminRouter';
 
 
 
-let Extracjwt = passport jwt.extract .extract
+let Extracjwt = passport.extract .extract
 let jwtStrategy = passportJWT.strategy
 
 let jwtOptions = {
