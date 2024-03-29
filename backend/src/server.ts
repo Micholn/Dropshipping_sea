@@ -21,12 +21,12 @@ import adminRouter from './Routers/adminRouter';
 
 
 
-let Extracjwt = passportJWT.extract
-let jwtStrategy = passportJWT.strategy
+let Extracjwt = passportJWT.extract;
+let jwtStrategy = passportJWT.strategy;
 
 let jwtOptions = {
-  jwtFromRequest: extractalalljwt.strategy;
-  s
+  jwtFromRequest: Extractalalljwt.strategy;
+  
 
 //eslint-disable-next-line new-cap
 let strategy = new jwtStrategy(jwtOptions, (jwtPaylo
