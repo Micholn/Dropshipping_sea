@@ -42,7 +42,12 @@
                 "tags": [
                     "product"
                 ],
-                "summary": "To add new product"
+                "summary": "To add new product",
+                "description": "",
+                "operationId": "Addproduct",
+                "consumes": [
+                    "multipart/form-data"
+                ]
             }
         },
         "/category": {
