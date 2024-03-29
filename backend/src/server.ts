@@ -97,6 +97,6 @@ app.delete("/logout", (req, res) => {
  */
 public start = (port: number) => {
   return new Promise(resolve, reject) => {
-    const server = http.create
+    const server = http.createServer
   }
 }
