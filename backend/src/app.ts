@@ -22,9 +22,6 @@ export default starter;
 
 
 
-const LocalStrategy = require("passport-local").Strategy//the local version that allows us to login
-const bcrypt = require("bcrypt"); //for hashing
-
 /**initialize passport and pass it to our different functions */
 function initialize(passport, getUserByEmail, getUserById) {
   /**the parameters we're authenticating are: email, password and the done function is going 
