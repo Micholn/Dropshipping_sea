@@ -1,7 +1,8 @@
 {
     "swagger": "2.0",
     "info": {
-
+        "description": "where was this made",
+        "version": 
     },
     "host": "",
     "tags": [
