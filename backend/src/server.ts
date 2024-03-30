@@ -66,11 +66,7 @@ app.use(methodOverride('_method'));
 
 
 app.get("/", checkAuthenticated, (req, res) => {
-  res.render("index.ejs", { name: req.user.name });
-});
-
-
-
+  res.render("index.ejs", { name: req.user.name })
 
 
 
