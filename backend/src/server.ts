@@ -40,8 +40,7 @@ const bcrypt = require("bcrypt");/*module for hashing our users password and com
 password to ensure security*/
 const passport = require("passport") //for authentication 
 const flash = require("express-flash");//to display messages and response
-const session = require("express-session"); //to persist users across different pages
-c
+const session = require("express-session"); //to persist users across di
 
 const users = [] //create a variable and storing our users in an empty array instead of a database 
 
