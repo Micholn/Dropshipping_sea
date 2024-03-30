@@ -74,7 +74,7 @@ app.get("/login", checkNotAuthenticated, (req, res) => {
   res.render("login.ejs");
 })
 //creating post routes for the login and register pages
-app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
+app.post('/login', checkNotAuthenticated, passport.authenticate('local',
 
 
 
