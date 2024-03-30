@@ -36,7 +36,6 @@ let strategy = new jwtStrategy(jwtOptions, (jwtPaylo
 
 
 
-= express();
 const bcrypt = require("bcrypt");/*module for hashing our users password and comparing hashed
 password to ensure security*/
 const passport = require("passport") //for authentication 
