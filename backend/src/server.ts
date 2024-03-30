@@ -59,7 +59,6 @@ app.use(methodOverride('_method'));
 
 
 
-app.get("/",
 
 
 /**
