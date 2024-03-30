@@ -81,14 +81,6 @@ app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
 }))
 
 
-app.get("/register", checkNotAuthenticated, (req, res) => {
-  res.render("register.ejs");
-});
-
-app.delete("/logout", (req, res) => {
-  req.logOut
-
-
 
 /**
  * starting the public server
