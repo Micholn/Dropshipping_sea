@@ -76,8 +76,7 @@ app.get("/login", checkNotAuthenticated, (req, res) => {
 //creating post routes for the login and register pages
 app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
   successRedirect: '/',
-  failureRedirect: '/login',
-  failureFlash: true
+  failureRedirect: '
 
 
 
