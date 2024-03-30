@@ -59,7 +59,7 @@ app.use(methodOverride('_method'));
 
 
 
-app.get("/", checkAuthenticated, (req, re
+app.get("/",
 
 
 /**
