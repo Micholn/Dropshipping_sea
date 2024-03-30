@@ -104,4 +104,4 @@ public start = (port: number) => {
   }
 }
 
-ex
+export default ServiceWorkerRegistration;
