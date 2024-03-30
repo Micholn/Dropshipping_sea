@@ -86,7 +86,7 @@ app.get("/register", checkNotAuthenticated, (req, res) => {
 });
 
 app.delete("/logout", (req, res) => {
-  req.logOut()
+  req.logOut
 
 
 
