@@ -70,7 +70,8 @@ app.get("/", checkAuthenticated, (req, res) => {
 });
 
 
-app.get("/login", checkNotAuthent
+app.get("/login", checkNotAu
+
 
 
 
