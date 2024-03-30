@@ -73,8 +73,7 @@ app.get("/", checkAuthenticated, (req, res) => {
 app.get("/login", checkNotAuthenticated, (req, res) => {
   res.render("login.ejs");
 })
-//creating post routes for the login and register pages
-app.post('/login', checkNotAuthentica
+//creating post routes for the login and register page
 
 
 
