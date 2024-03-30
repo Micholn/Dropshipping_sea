@@ -41,8 +41,7 @@ password to ensure security*/
 const passport = require("passport") //for authentication 
 const flash = require("express-flash");//to display messages and response
 const session = require("express-session"); //to persist users across different pages
-const 
-
+c
 
 const users = [] //create a variable and storing our users in an empty array instead of a database 
 
