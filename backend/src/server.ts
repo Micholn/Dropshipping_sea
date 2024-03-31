@@ -16,7 +16,7 @@ import allApis from './swagger.json';
 import * as swaggerUi from "swagger-ui-express";
 import permissionRouter from './Routers/permissionRouter';
 import adminRouter from './Routers/adminRouter';
-import Router from './Routers/adminRouter';
+import PURouter from './Routers/adminRouter';
 
 
 let ExtracJwt = passportJWT.extract;
