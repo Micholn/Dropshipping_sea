@@ -19,7 +19,7 @@ import adminRouter from './Routers/adminRouter';
 import publicRouter from './Routers/adminRouter';
 
 
-let ExtracJwt = passportJWT.extract;
+let ExtractJwt = passportJWT.extract;
 let jwtStrategy = passportJWT.strategy;
 
 let jwtOptions = {
