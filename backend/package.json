@@ -15,7 +15,7 @@
     "db:create": "ts-node src/script/create-db.ts",
     "db:migrate": "cross-env NODE_ENV=development npm run typeorm:cli migration:run",
     "db:revert": "npm run typeorm:cli migration:revert",
-    "db:sync": "cross-env NODE_ENV=" 
+    "db:sync": "cross-env NODE_ENV=development npm run " 
   },
   "keywords": [],
   "author": "",
