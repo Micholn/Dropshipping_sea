@@ -9,7 +9,10 @@
     "dev": "nodemon ./src/app.ts",
     "start": "cross-env NODE_ENV=production node ./dist/app.js",
     "typeorm": "ts-node ./node_modules/typeorm/cli.js",
-    "typeorm:cli": "ts-node ./node_modules/typeorm/cli -f ./src/Dbconfig" 
+    "typeorm:cli": "ts-node ./node_modules/typeorm/cli -f ./src/Dbconfig/ormconfig.ts",
+    "db:drop": "npm run typeorm:cli schema:drop",
+    "migration:generate": "typeorm migration:create -n",
+     
   },
   "keywords": [],
   "author": "",
