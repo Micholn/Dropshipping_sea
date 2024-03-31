@@ -23,7 +23,7 @@ let ExtractJwt = passportJWT.ExtractJwt;
 let jwtStrategy = passportJWT.strategy;
 
 let jwtOptions = {
-  jwtFromRequest: ExtractJwt.strategy;
+  jwtFromRequest: ExtractJwt.from;
   
 }
 //eslint-disable-next-line new-cap
