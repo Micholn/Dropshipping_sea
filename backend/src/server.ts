@@ -25,7 +25,7 @@ let jwtStrategy = passportJWT.strategy;
 let jwtOptions = {
   jwtFromRequest: ExtractJwt.strategy;
   
-
+}
 //eslint-disable-next-line new-cap
 let strategy = new jwtStrategy(jwtOptions, (jwtPaylo
 
