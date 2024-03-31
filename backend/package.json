@@ -12,7 +12,9 @@
     "typeorm:cli": "ts-node ./node_modules/typeorm/cli -f ./src/Dbconfig/ormconfig.ts",
     "db:drop": "npm run typeorm:cli schema:drop",
     "migration:generate": "typeorm migration:create -n",
-    "db:create" 
+    "db:create": "ts-node src/script/create-db.ts",
+    "db:migrate": "cross-env NODE_ENV=development npm run typeorm:cli migration:run",
+    "db:revert": 
   },
   "keywords": [],
   "author": "",
