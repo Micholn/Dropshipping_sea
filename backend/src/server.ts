@@ -23,7 +23,8 @@ let ExtractJwt = passportJWT.ExtractJwt;
 let jwtStrategy = passportJWT.strategy;
 
 let jwtOptions = {
-  jwtFromRequest: ExtractJwt.fromAuthHeaderWithScheme();
+  jwtFromRequest: ExtractJwt.fromAuthHeaderWithScheme("jwt"),
+  secretOrKey: "6f733cff-f788-4cf6-95bf-dea989617040",
   
 }
 //eslint-disable-next-line new-cap
