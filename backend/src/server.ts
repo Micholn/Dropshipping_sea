@@ -38,11 +38,11 @@ let strategy = new jwtStrategy(jwtOptions, (jwtPaylo
 const bcrypt = require("bcrypt");/*module for hashing ou
 const passport = require("passport") //for authentication 
 const flash = require("express-flash");//to display messages and response
-const session = require("express-session"); //to 
+const session = require("express-session"); //to
 
 const users = [] //create a variable and storing our users in an empty array instead of a database 
 
-app.set("view-engine", "ejs");
+app.set("view-engine", "ejs")
 app.use(express.urlencoded({ extended: false })); /**telling our app that we want to take the 
 email and password from our forms and access them in a request variable inside the post method */
 app.use(flash());
