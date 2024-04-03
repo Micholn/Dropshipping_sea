@@ -49,7 +49,7 @@ app.use(flash());
 app.use(session({
   secret: process.env.SESSION_SECRET, //going to encrypt all of our information
   resave: false,             //we don't wanna resave if nothing is changed
-  saveUninitialized: false   //we don't wanna
+  saveUninitialized: false   //we don't wann
 }));
 app.use(passport.initialize());
 app.use(passport.session());
