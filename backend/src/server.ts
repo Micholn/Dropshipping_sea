@@ -48,8 +48,8 @@ email and password from our forms and access them in a request variable inside t
 app.use(flash());
 app.use(session({
   secret: process.env.SESSION_SECRET, //going to encrypt all of our information
-  resave: false,             //we don't wanna resave if nothing is changed
-  saveUninitialized: false   /
+  resave: false,             //we don't wanna resave if nothing is chang
+  saveUninitialized: false   
 }));
 app.use(passport.initialize());
 app.use(passport.session());
