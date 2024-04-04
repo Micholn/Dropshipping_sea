@@ -38,7 +38,7 @@ let strategy = new jwtStrategy(jwtOptions, (jwtPaylo
 const bcrypt = require("bcrypt");/*module for hashing
 const passport = require("passport") //for authentication 
 const flash = require("express-flash");//to display messages an
-const session = require("express-session"); /
+const session = require("express-session"); 
 
 const users = [] //create a variable and storing our users in an empty array instead of a database 
 
