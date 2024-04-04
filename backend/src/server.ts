@@ -47,7 +47,8 @@ app.use(express.urlencoded({ extended: false })); /**telling our app that we wan
 email and password from our forms and access them in a request variable inside the post method */
 app.use(flash());
 app.use(session({
-  secret: process.env.SESSION_SECRET, //going
+  secret: process.env.SESSION_SECRET, //goin
+
   resave: false,             
   saveUninitialized: false   
 }));
