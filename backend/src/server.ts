@@ -44,7 +44,7 @@ const users = [] //create a variable and storing our users in an empty array ins
 
 app.set("view-engine", "ejs")
 app.use(express.urlencoded({ extended: false })); *
-email and password from our forms and access them in */
+email and password from our forms and access them  */
 app.use(flash());
 app.use(session({
   secret: process.env.SESSION_SECRET, 
