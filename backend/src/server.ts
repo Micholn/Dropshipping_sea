@@ -44,7 +44,7 @@ const users = [] //create a variable and storing our users in an empty array ins
 
 app.set("view-engine", "ejs")
 app.use(expre
-email
+ema
 app.use(flash());
 app.use(session({
   secret: process.env.SESSION_SECRET, 
