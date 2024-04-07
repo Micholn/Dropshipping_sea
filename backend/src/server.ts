@@ -42,6 +42,8 @@ const session = require("express-session");
 
 const users = [] //create a variable and storing our users in an empty array instead of a database 
 
+
+
 app.use(flash());
 app.use(session({
   secret: process.env.SESSION_SECRET, 
@@ -50,7 +52,7 @@ app.use(session({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
-app.use(methodOverride('_method')
+app.use(methodOverride('_method'
 
 
 
