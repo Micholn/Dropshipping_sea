@@ -43,7 +43,7 @@ const session = require("express-session");
 const users = [] //create a variable and storing our users in an empty array instead of a database 
 
 app.set("view-engine", "ejs")
-app.use(express.urlencoded({ extended: fal
+app.use(express.urlencoded({ extended: f
 email a
 app.use(flash());
 app.use(session({
