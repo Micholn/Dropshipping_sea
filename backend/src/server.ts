@@ -43,7 +43,7 @@ const session = require("express-session");
 const users = [] //create a variable and storing our users in an empty array instead of a database 
 
 app.set("view-engine", "ejs")
-app.use(exp
+app.use(ex
 app.use(flash());
 app.use(session({
   secret: process.env.SESSION_SECRET, 
