@@ -28,7 +28,7 @@ let jwtOptions = {
   
 }
 //eslint-disable-next-line new-cap
-let strategy = new jw
+let strategy = new j
 
 
 
