@@ -34,7 +34,6 @@ let jwtOptions = {
 
 
 
-
 const bcrypt = require("bcrypt");/*module for hashi */
 const passport = require("passport") //for authentication 
 const flash = require("express-flash");//to display messages a
