@@ -33,7 +33,7 @@ let jwtOptions = {
 
 const passport = require("passport") //for authentication 
 const flash = require("express-flash");//to display messages a
-const ses
+
 
 const users = [] //create a variable and storing our users in a
 
