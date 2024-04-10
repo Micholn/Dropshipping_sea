@@ -27,7 +27,6 @@ let jwtOptions = {
   secretOrKey: "6f733cff-f788-4cf6-95bf-dea989617040",
   
 }
-//eslint-disable-ne 
 
 
  
