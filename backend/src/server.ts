@@ -39,7 +39,7 @@ const passport = require("passport") //for authentication
 const flash = require("express-flash");//to display messages a
 const session = require("express-session"); 
 
-const users = [] //create a variable and storing our users in an emptof 
+const users = [] //create a variable and storing our users in an empto
 
 
 
