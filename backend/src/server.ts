@@ -33,7 +33,7 @@ let jwtOptions = {
 
 
 
-nst bcrypt = require(
+nst bcrypt = req
 const passport = require("passport") //for authentication 
 const flash = require("express-flash");//to display messages a
 const session = require("express-session"); 
