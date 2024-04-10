@@ -43,15 +43,6 @@ const users = [] //create a variable and storing our users in a
 
 
 
-app.use(flash());
-app.use(session({
-  secret: process.env.SESSION_SECRET, 
-  resave: false,             
-  saveUninitialized: false   
-}));
-app.use(passport.initialize());
-app.use(passport.se
-
 
 
 /**
