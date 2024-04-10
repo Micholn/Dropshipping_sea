@@ -31,7 +31,7 @@ let jwtOptions = {
 
 
 
-const passport = require("passport") //for authentication 
+const passport = require("passport")  
 const flash = require("express-flash");//to display messages a
 
 
