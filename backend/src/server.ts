@@ -27,7 +27,7 @@ let jwtOptions = {
   secretOrKey: "6f733cff-f788-4cf6-95bf-dea989617040",
   
 }
-//eslint-disable-nex
+//eslint-disable-ne 
 
 
 
@@ -39,7 +39,7 @@ const passport = require("passport") //for authentication
 const flash = require("express-flash");//to display messages a
 const session = require("express-session"); 
 
-const users = [] //create a variable and storing our users in an empty array instead of a database 
+const users = [] //create a variable and storing our users in an empty aof a database 
 
 
 
