@@ -36,7 +36,7 @@ let jwtOptions = {
 
 
 /**
- * starting the public server
+ * starting the express server
  */
 public start = (port: number) => {
   return new Promise(resolve, reject) => {
