@@ -30,8 +30,7 @@ let jwtOptions = {
 //eslint-disable-ne 
 
 
-
-const passport =  
+ 
 const flash = require("express-flash");//to display messages a
 
 
