@@ -52,7 +52,7 @@ class Server {
 
     this.app.use(helmet());
     this.app.use(Passport.initialize());
-    this.app.use(body)
+    this.app.use(bodyParser)
   }
 }
 
