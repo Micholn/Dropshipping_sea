@@ -51,7 +51,7 @@ class Server {
   private config() {
 
     this.app.use(helmet());
-    this.app.use(Passport)
+    this.app.use(Passport.initialize());
   }
 }
 
