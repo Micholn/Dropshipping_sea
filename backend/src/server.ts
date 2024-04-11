@@ -52,7 +52,8 @@ class Server {
 
     this.app.use(helmet());
     this.app.use(Passport.initialize());
-    this.app.use(bodyParser.urlencoded({ extended: true}))
+    this.app.use(bodyParser.urlencoded({ extended: true }));
+    this.app.use(bodyParser.json())
   }
 }
 
