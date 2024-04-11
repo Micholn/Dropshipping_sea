@@ -50,7 +50,7 @@ class Server {
 
   private config() {
 
-    this.
+    this.app.use
   }
 }
 
