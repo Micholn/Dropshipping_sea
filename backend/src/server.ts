@@ -56,7 +56,7 @@ class Server {
     this.app.use(bodyParser.json({ limit: "1mb" })); // 100kb default 
     this.app.use(cors());
 
-    let path = (process.env.NODE_ENV?.toLowerCase() == 'development') ? 
+    let path = (process.env.NODE_ENV?.toLowerCase() == 'development') ? '/'
   }
 }
 
