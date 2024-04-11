@@ -35,6 +35,11 @@ let strategy = new jwtStrategy(jwtOptions, (jwtPayload, next) => {
 Passport.use(strategy);
 class Server {
   private app: any;
+
+  constructor() {
+    this.app = express();
+    
+  }
 }
 
 
