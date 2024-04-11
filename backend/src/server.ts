@@ -41,7 +41,7 @@ class Server {
     this.config();
     this.routerConfig();
     this.dbConfig()
-     //this.
+     //this.dbConnect
   }
 }
 
