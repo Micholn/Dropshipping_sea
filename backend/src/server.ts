@@ -50,7 +50,7 @@ class Server {
 
   private config() {
 
-    this.app.use
+    this.app.use(helmet)
   }
 }
 
