@@ -49,7 +49,8 @@ class Server {
    */
 
   private config() {
-    
+
+    this.
   }
 }
 
