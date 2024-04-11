@@ -45,8 +45,10 @@ class Server {
   }
 
   /**
-   * 
+   * config for middlewares
    */
+
+  private config
 }
 
 
