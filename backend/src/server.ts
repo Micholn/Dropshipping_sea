@@ -40,7 +40,8 @@ class Server {
     this.app = express();
     this.config();
     this.routerConfig();
-    this.dbConfig
+    this.dbConfig()
+     //this.
   }
 }
 
