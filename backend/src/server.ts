@@ -48,7 +48,9 @@ class Server {
    * config for middlewares
    */
 
-  private config
+  private config() {
+    
+  }
 }
 
 
