@@ -66,7 +66,7 @@ class Server {
    * connection for database 
   */
   private dbConfig() {
-    DBConnect
+    DBConnect()
   }
 }
 
