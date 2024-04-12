@@ -73,7 +73,7 @@ class Server {
    * 
    */
   private routerCnfig() {
-    let middleware 
+    let middleware = 
   }
 }
 
