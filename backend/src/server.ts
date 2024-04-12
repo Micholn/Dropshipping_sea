@@ -75,7 +75,9 @@ class Server {
   private routerCnfig() {
     let middleware = new Middlewares();
     let preAuth = [
-      Passsport.authenticate("jwt", )
+      Passsport.authenticate("jwt", {
+        
+      })
     ]
   }
 }
