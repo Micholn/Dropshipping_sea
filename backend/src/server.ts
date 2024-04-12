@@ -59,6 +59,7 @@ class Server {
     let path = (process.env.NODE_ENV?.toLowerCase() == 'development') ? '/Public' : './Public'
     var publicDir = require("path").join(__dirname, path);
     console.log(publicDir)
+    
   }
 }
 
