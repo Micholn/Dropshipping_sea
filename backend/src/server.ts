@@ -76,7 +76,7 @@ class Server {
     let middleware = new Middlewares();
     let preAuth = [
       Passsport.authenticate("jwt", {
-        
+        session: false
       })
     ]
   }
