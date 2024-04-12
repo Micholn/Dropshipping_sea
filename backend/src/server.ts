@@ -65,7 +65,9 @@ class Server {
   /**
    * connection for database 
   */
-  private dbConfig()
+  private dbConfig() {
+    
+  }
 }
 
 
