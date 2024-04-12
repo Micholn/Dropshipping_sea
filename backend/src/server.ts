@@ -65,6 +65,7 @@ class Server {
   /**
    * connection for database 
   */
+  private 
 }
 
 
