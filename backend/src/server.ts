@@ -72,7 +72,9 @@ class Server {
   /**
    * 
    */
-  private 
+  private routerCnfig() {
+    
+  }
 }
 
 
