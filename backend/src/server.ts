@@ -57,7 +57,8 @@ class Server {
     this.app.use(cors());
 
     let path = (process.env.NODE_ENV?.toLowerCase() == 'development') ? '/Public' : './Public'
-    var publicDir = require("path").join(__dirname, path)
+    var publicDir = require("path").join(__dirname, path);
+    
   }
 }
 
