@@ -23,7 +23,7 @@ let ExtractJwt = passportJWT.ExtractJwt;
 let jwtStrategy = passportJWT.strategy;
 
 let jwtOptions = {
-  jwtFromRequest: ExtractJwt.fromAuthHeaderW
+  jwtFromRequest: ExtractJwt.fromAuthHeader
   secretOrKey: "6f733cff-f788-4cf6-95bf-dea989617040",
 }
 
