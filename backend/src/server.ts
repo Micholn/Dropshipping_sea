@@ -83,16 +83,18 @@ class Server {
 
 
 
-/**
- * starting the express server
- */
-public start = (port: number) => {
-  return new Promise(resolve, reject) => {
-    const server = http.createServer(this.app);
-    server.listen(port, () => {
-      resolve(port);
-    }).on("error", (err: Object) => reject(err));
-  }
+  /**
+   * starting the express server
+   */
+  public start = (port: number) => {
+    return new Promise((resolve, reject) => {
+      const server = http.createServer(this.app);
+      server.listen(port, () => {
+        resolve(port);
+      })
+        .on("error", (err: Object) => reject(err));
+    });
+  };
 }
 
-export default Server;
+export default Server
