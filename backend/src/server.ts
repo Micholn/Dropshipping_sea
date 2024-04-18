@@ -76,8 +76,10 @@ class Server {
     let preAuth = [
       Passsport.authenticate("jwt", {
         session: false
-      })
-    ]
+      }),
+      middleware.loadUser,
+    ];
+    
   }
 }
 
