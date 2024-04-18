@@ -71,12 +71,12 @@ class Server {
   /**
    * 
    */
-  private routerCnfig() {
+  private routerConfig() {
     let middleware = new Middlewares();
     let preAuth = [
-      Passsport.authenticate("jwt", {
-        session: false
-      })
+      Passport.authenticate("jwt", {
+        session: false,
+      }),
     ]
   }
 }
