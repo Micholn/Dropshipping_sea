@@ -19,19 +19,18 @@ import adminRouter from './Routers/adminRouter';
 import publicRouter from './Routers/adminRouter';
 
 
-let ExtractJwt = passportJWT.ExtractJwt;
+let ExtractJwt = passportJWT.Extrac
 let jwtStrategy = passportJWT.strategy;
 
 let jwtOptions = {
-  jwtFromRequest: ExtractJwt.fromAuthHeaderWithScheme("jwt"),
-  secretOrKey: "6f733cff-f788-4cf6-95bf-dea989617040",
+  jwtFromRequest: ExtractJwt.from
+  secretOrKey: "6f733cff-f788-4cf6-95bf-dea989617040"
 }
 
 // eslint-disable-next-line new-cap
 let strategy = new jwtStrategy(jwtOptions, (jwtPayload, next) => {
   next(null, jwtPayload.id);
-});
-
+})
 Passport.use(strategy);
 class Server {
   private app: any;
